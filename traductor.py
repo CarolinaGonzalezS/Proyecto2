@@ -1,5 +1,6 @@
-<<<<<<< HEAD
+
 from textblob import TextBlob
+import goslate
 print("1.- traduccion de parte de un texto de harry Potter")
 print("2.- traduccion de un frase ingresada por usted")
 opcion=int(input("elija la opcion que desee:\n"))
@@ -26,16 +27,16 @@ if opcion==1:
     Se despierta en la enfermeria y Dumbledore le dice que Quirrell murio, y Voldemort escapo. Tambien el director habia sido el que le habia mandado la capa de invisibilidad a Harry. 
     Finalmente, el banquete de fin de anio. Cuando Harry entra al Gran Comedor se encuentra con decoraciones verde y plata: Slytherin habia ganado. Pero luego de agragarle a Harry, Ron y Hermione puntos, Gryffindor y Slytherin quedaron empatados. Finalmente, se le agregan unos pocos puntos mas a Neville por haber intentado detener al Trio. Gryffindor habia ganado la Copa de las Casas.
     '''
+    gs= goslate.Goslate()
+    print(gs.translate(frase, 'en'))
+    
 if opcion==2:
     frase=str(input("ingrese la frase a traducir\n"))
     print("tu frase es:")
     print(frase)
     print("tu traduccion es: ")
-=======
-import goslate
+    gs= goslate.Goslate()
+    print(gs.translate(frase, 'en'))
 
-gs= goslate.Goslate()
-print(gs.translate('hello world', 'es'))
->>>>>>> origin/master
 
 
