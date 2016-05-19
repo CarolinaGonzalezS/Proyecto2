@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from textblob import TextBlob
 print("1.- traduccion de parte de un texto de harry Potter")
 print("2.- traduccion de un frase ingresada por usted")
@@ -30,5 +31,11 @@ if opcion==2:
     print("tu frase es:")
     print(frase)
     print("tu traduccion es: ")
+=======
+import goslate
+
+gs= goslate.Goslate()
+print(gs.translate('hello world', 'es'))
+>>>>>>> origin/master
 
 
